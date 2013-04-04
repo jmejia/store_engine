@@ -8,6 +8,7 @@ class SearchController < ApplicationController
 
 private
 
+# This method is case-sensitive. Can you make it case in-sensitive?
   def product_search(search)
     if search
       products = Product.find(:all,
